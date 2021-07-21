@@ -1,0 +1,110 @@
+.test {
+    background-color: none;
+}
+
+.fullCont {
+    max-width: None !important;
+    width:  100vw !important;
+    padding-left: 0;
+}
+.elekh1 {
+    color:#1c79be;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-family: "Helvetica Neue LT Pro";
+    text-align: center;
+    padding: 40px 50px 0px;
+}
+.strongtext {
+    color:#1c79be;
+    font-weight: bold;
+}
+.elekp {
+    padding: 10px 50px;
+    
+}
+.eleklistpos {
+    list-style-position: inside !important;
+}
+.eleklist {
+    margin: 10px 50px;
+    list-style: none;
+    
+}
+.elekbullet::before {
+    content: "\2022";
+    color: #1c79be;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.elekh2 {
+    font-weight: bold;
+    font-size:medium;
+    padding: 10px 50px;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+.obrazekgraf {
+    margin: 10px 50px;
+    float: left;
+  }
+.eleknobullet {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.kontaktlist {
+    padding: 0px 50px;
+}
+.vyhrajp {
+    margin: 20px 50px;
+    padding: 10px 50px;
+    text-align: center;
+    font-weight: 600;
+}
+.strongtextvyhraj {
+    color:#1c79be;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.vyhrajredtext {
+    color: #c10104;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 50px;
+    line-height: 90%;
+    margin: 0px 50px
+}
+.vyhrajbbg {
+    background-color: #d4f9ff;
+}
+
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }

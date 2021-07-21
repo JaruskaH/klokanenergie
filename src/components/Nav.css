@@ -1,5 +1,5 @@
 .Nav {
-  background: white;
+  background: #1c79be;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -32,13 +32,15 @@
 .Nav--MenuButton {
   display: none !important;
 }
-
+.Nav--MenuButton svg{
+  color: white;
+}
 .NavLink {
   padding: 0.5rem 1rem;
   display: block;
   font-weight: 500;
   transition: color 0.2s, border-bottom-color 0.2s;
-  color: inherit;
+  color: white;
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
@@ -103,7 +105,7 @@
   width: 15rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .Nav--Container {
     display: flex;
   }
@@ -127,7 +129,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: #1c79be;
     animation: Nav--Links 0.2s ease;
   }
 

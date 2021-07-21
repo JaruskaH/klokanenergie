@@ -1,0 +1,8 @@
+.HomeIm {
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-position: center bottom;
+    min-height: 80vh;
+}

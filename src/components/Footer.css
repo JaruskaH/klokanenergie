@@ -1,7 +1,8 @@
 .footer {
   padding: 2rem 0;
-  background: var(--lightGrey);
-  font-size: 1.2rem;
+  background: #1c79be;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .footer a {
