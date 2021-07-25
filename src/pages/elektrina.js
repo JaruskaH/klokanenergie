@@ -8,15 +8,24 @@ import TwoColBlock from '../components/TwoColBlock'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Container,Row,Col,Card,ListGroup,Figure } from 'react-bootstrap';
 import HalfImage from '../components/HalfImage';
+import Img from "gatsby-image"
+import dwnfile from "../downloads/KlokanEnergieElektrinaEneka.pdf"
 
 function ElektrinaPage(props) {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "Klokan_energie_eneka1.jpg" }) {
+        imback: file(relativePath: { eq: "Klokan_energie_eneka1.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        graf: file(relativePath: { eq: "graf_eneka.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 400) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -24,8 +33,8 @@ function ElektrinaPage(props) {
     `
   )
   // Set ImageData.
-  const imageData = data.desktop.childImageSharp.fluid
-
+  const imageData = data.imback.childImageSharp.fluid
+  const graf = data.graf.childImageSharp.fluid
   return ( 
   <Layout
     meta={ false}
@@ -40,7 +49,7 @@ function ElektrinaPage(props) {
   
       </Col>
   
-      <Col>
+      <Col md={5} s={12}>
       <div>
       <h1 className="elekh1">Elektřina</h1>
       <p className="elekp">S Klokanem budete za elektřinu platit až <strong className="strongtext">o 20% levněji</strong> než u standardních dodavatelů, to však není to jediné, co Vám můžeme nabídnout. S Klokanem získáte navíc:</p>
@@ -51,8 +60,8 @@ function ElektrinaPage(props) {
         <li className="elekbullet">Bude-li to potřeba, vyřešíme vše v pohodlí Vašeho domova</li>
       </ul>
       <h2 className="elekh2">Srovnání ceny s ostatními</h2>
-      <img className="obrazekgraf" src="logo.png"></img>
-      <p className="elekp">Stáhněte si aktuální ceník KlokanEneka Plyn <a className="strongtext" href="url">zde</a></p>
+      <Img fluid={graf} />
+      <p className="elekp">Stáhněte si aktuální ceník KlokanEneka Plyn <a className="strongtext" href={dwnfile} download>zde</a></p>
       </div>
       </Col>
     </Row>

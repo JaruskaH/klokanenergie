@@ -8,6 +8,10 @@
     "url": "https://github.com/thriveweb/yellowcake"
   },
   "dependencies": {
+    "@fontsource/lato": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.0",
+    "@fontsource/roboto": "^4.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",

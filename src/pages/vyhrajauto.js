@@ -40,7 +40,7 @@ function VyhrajautoPage(props) {
       </Col>
   
       <Col md={7} s={12}>
-      <div>
+      <div className="vyhaut">
       <p className="vyhrajp">Ještě stále zvažujete jestli využít nabídky na levnější elektřinu a plyn?<br></br> Tak to si udělejte ještě pár minut času a přečtěte si následující informace, protože <br></br><strong className="strongtextvyhraj">takováto šance tady ještě NIKDY NEBYLA !</strong></p>
       <p className="vyhrajredtext">Získejte 300.000 na nákup nového automobilu</p>
       <p className="vyhrajp">a přitom nemusíte zaplatit jedinou korunu. Stačí „investovat“ jen několik minut vašeho času a chuť to zkusit. Šance na výhru je tak vysoká, že tomu nejdříve ani nebudete chtít uvěřit.  Pokud například začnete využívat naše služby u elektřiny a plynu, <strong className="strongtextvyhraj">hned máte šanci 1:300, že automobil získáte právě VY.</strong></p>

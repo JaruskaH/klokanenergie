@@ -39,8 +39,9 @@ function KontaktPage(props) {
 
       <Container className="fullCont">
     <Row>
+  
       <Col md={7} xs={12}>
-     <GoogleMap center={center}/>
+      <GoogleMap center={center}/>
   
       </Col>
   
@@ -55,9 +56,8 @@ function KontaktPage(props) {
         <li className="eleknobullet">Ze sítě KlokanMobil: *55</li>
         <li className="eleknobullet"><strong className="strongtext">Pevná linka:</strong> 530 333 144</li>
         <li className="eleknobullet"><strong className="strongtext">Mobilní linka:</strong> 778 144 144</li>
-        <li className="eleknobullet">Všední dny 9:00 - 16:00 hod</li>
-        <br></br>
         <li className="eleknobullet"><strong className="strongtext">e-mail:</strong> info@klokanmobil.cz</li>
+        <li className="eleknobullet">Všední dny 9:00 - 16:00 hod</li>
         <br></br>
         <li className="eleknobullet"><strong className="strongtext">IČ:</strong> 03118932, DIČ: CZ03118932</li>
         <li className="eleknobullet"><strong className="strongtext">Bankovní spojení:</strong> 776626/5500</li>

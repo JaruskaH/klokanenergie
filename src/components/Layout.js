@@ -9,7 +9,7 @@ import GithubCorner from './GithubCorner'
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
 
-export default ({ children, meta, title }) => {
+export default ({ children, meta, title}) => {
   return (
     <StaticQuery
       query={graphql`
@@ -39,6 +39,7 @@ export default ({ children, meta, title }) => {
           }
         }
       `}
+      
       render={data => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {},
@@ -49,7 +50,7 @@ export default ({ children, meta, title }) => {
                 })
               : false
           }
-
+        
         return (
           <Fragment>
             <Helmet
@@ -79,7 +80,7 @@ export default ({ children, meta, title }) => {
 
             <Fragment>{children}</Fragment>
 
-            <Footer />
+            <Footer/>
           </Fragment>
         )
       }}

@@ -6,7 +6,7 @@ import Logo from './Logo'
 
 import './Nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDev, faHome, faTwitter } from '@fortawesome/free-solid-svg-icons'
+import { faHome,faBurn,faBolt,faExclamation,faMapMarkerAlt,faListOl} from '@fortawesome/free-solid-svg-icons'
 export class Navigation extends Component {
   state = {
     active: false,
@@ -72,14 +72,12 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/"><FontAwesomeIcon icon={faHome} style={{color:"white"}}/>
-  Domů</NavLink>
-            <NavLink to="/onas/">O nás</NavLink>
-            <NavLink to="/plyn/">Plyn</NavLink>
-            <NavLink to="/elektrina/">Elektřina</NavLink>
-            <NavLink to="/vyhrajauto/">Vyhraj auto</NavLink>
-            <NavLink to="/pravidla/">Pravidla soutěže</NavLink>
-            <NavLink to="/kontakt/">Kontakt</NavLink>
+            <NavLink to="/onas/"><FontAwesomeIcon icon={faHome}/>   O nás</NavLink>
+            <NavLink to="/plyn/"><FontAwesomeIcon icon={faBurn}/>   Plyn</NavLink>
+            <NavLink to="/elektrina/"><FontAwesomeIcon icon={faBolt}/>   Elektřina</NavLink>
+            <NavLink to="/vyhrajauto/"><FontAwesomeIcon icon={faExclamation}/>   Vyhraj auto</NavLink>
+            <NavLink to="/pravidla/"><FontAwesomeIcon icon={faListOl}/>   Pravidla soutěže</NavLink>
+            <NavLink to="/kontakt/"><FontAwesomeIcon icon={faMapMarkerAlt}/>   Kontakt</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

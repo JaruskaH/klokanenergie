@@ -9,3 +9,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './src/styles/global.css';
 import "bootstrap/dist/js/bootstrap.min.js";
+import "@fontsource/montserrat"
+import "@fontsource/montserrat/900.css"
+import "@fontsource/montserrat/700.css"

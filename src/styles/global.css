@@ -10,17 +10,20 @@
 .elekh1 {
     color:#1c79be;
     text-transform: uppercase;
-    font-size: 2.5em;
-    font-family: "Helvetica Neue LT Pro";
+    font-size: 2.2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
     text-align: center;
     padding: 40px 50px 0px;
 }
 .strongtext {
     color:#1c79be;
-    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 .elekp {
     padding: 10px 50px;
+    font-family: "Montserrat", sans-serif;
     
 }
 .eleklistpos {
@@ -29,7 +32,7 @@
 .eleklist {
     margin: 10px 50px;
     list-style: none;
-    
+    font-family: "Montserrat", sans-serif;   
 }
 .elekbullet::before {
     content: "\2022";
@@ -39,8 +42,35 @@
     width: 1em;
     margin-left: -1em;
 }
+.pravidlalist {
+    margin: 30px 50px;
+    list-style: none;
+    counter-reset: list-number;
+    font-family: "Montserrat", sans-serif;
+}
+
+.pravidlano{
+    counter-increment: list-number;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+.pravidlano::before {
+    content: counter(list-number)". ";
+    font-size: 1em;
+    color: black;
+    font-weight: 900;
+    position: relative;
+    display: inline-flex;
+    margin-left: -1.5em;
+    width: 1.5em;
+  }
+  
+
 .elekh2 {
-    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-size:medium;
     padding: 10px 50px;
 }
@@ -70,28 +100,33 @@ a:link {
     margin: 0; 
 }
 .kontaktlist {
-    padding: 0px 50px;
+    padding: 30px 50px;
 }
 .vyhrajp {
-    margin: 20px 50px;
-    padding: 10px 50px;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 50px 10px 50px;
     text-align: center;
     font-weight: 600;
+    
 }
 .strongtextvyhraj {
     color:#1c79be;
-    font-weight: bold;
-    font-size: 1.8em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 0.1em;
 }
 .vyhrajredtext {
     color: #c10104;
     font-size: 3em;
-    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
     text-align: center;
     padding: 0px 50px;
     line-height: 90%;
-    margin: 0px 50px
+    margin-bottom: 0.2em;
 }
+    
 .vyhrajbbg {
     background-color: #d4f9ff;
 }
@@ -107,4 +142,36 @@ a:link {
   .row > [class*='col-'] {
     display: flex;
     flex-direction: column;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  .pravidlasout {
+      font-family: "montserrat", sans-serif;
+      font-size: 2.2em;
+      color: black;
+      font-weight: 900;
+      text-align: center;
+      padding: 40px 50px 0px;
+  }
+  .pravidlano strong {
+      font-size: 1em;
+      color: #1c79be;
+  }
+  .vyhaut{
+      padding-top: 50px;
+  }
+
+  .butto{
+    padding: 1.5rem 3rem;
+    margin-right: 1rem;
+  }
+  
+  .pulkruhim{
+    margin-bottom: 1px;
+    margin-left: 1px;
+    width: 469px;
+    position: fixed;
+    bottom: 0;
+    right: 8%;
   }

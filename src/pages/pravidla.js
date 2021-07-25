@@ -13,7 +13,7 @@ function PravidlaPage(props) {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "Klokan_energie_eneka1.jpg" }) {
+        desktop: file(relativePath: { eq: "Klokan_energie_eneka3.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
@@ -34,17 +34,22 @@ function PravidlaPage(props) {
       <main className="DefaultPage">
 
       <Container className="fullCont">
-    <Row>
-      <Col md={7} xs={12}>
+    <Row className="vyhrajbbg">
+      <Col md={5} xs={12}>
      <HalfImage imageData={imageData}/>
   
       </Col>
   
-      <Col>
+      <Col md={7} xs={12}>
       <div>
-      <h1 className="elekh1">O nás</h1>
-      <p className="elekp">Společnost <strong className="strongtext">KlokanEnergie</strong> byla založena v symbolické datum 12.02.2021 a cílem tohoto projektu je navázat na <strong className="strongtext">dlouholeté zkušenosti v oblasti dodávek elektřiny a plynu</strong>, které jsem postupně nasbíral v předchozích letech.</p>
-      <p className="elekp">Již od roku 2006 mě zajímala <strong className="strongtext">problematika dodávání elektřiny a plynu</strong> do domácností. Při své práci jsem měl možnost hovořit <strong className="strongtext">s velkým množstvím zákazníků</strong> z řad domácností a velmi často jsem pomáhal řešit dotazy, náměty a problémy, které se týkaly právě elektřiny a plynu. Velmi často jsem pak <strong className="strongtext">pomáhal řešit našim klientům potíže</strong> při komunikaci se svým dodavatelem.  Webové stránky obchodníků slibují nízké ceny, osobní přístup, jednoduchost, ale skutečnost je často úplně jiná…</p>
+      <h1 className="pravidlasout">Pravidla soutěže</h1>
+      <ol className="pravidlalist">
+        <li className="pravidlano">Celkový počet losů pro akci <strong >„Vyhraj auto“</strong> je stanoven na <strong>600 kusů.</strong></li>
+        <li className="pravidlano">Jednotlivé losy budou přiděleny na základě níže stanovených pravidel.Seznam přidělených losů bude uložen u Notářské kanceláře XXX, která dohlédne na dodržení všech stanovených pravidel a zúčastní se závěrečného losování.</li>
+        <li className="pravidlano">Společnost <strong>KlokanEnergie</strong> se zavazuje uhradit částku <strong>300.000 Kč</strong> včetně DPH nejpozději do 10dnů od uzavření soutěže. Tato částka je určena výhradně na nákup automobilu v předem dohodnutém autosalonu XXX.</li>
+        <li className="pravidlano">Majitel výherního losu <strong>si může vybrat jakýkoliv automobil</strong> z aktuální nabídky autosalonu. V případě nákupu automobilu s vyšší prodejní cenou, zaplatí společnost KlokanEnergie částku 300.000Kč včetně DPH a majitel výherního losu zaplatí pouze zbytek ceny. </li>
+        <li className="pravidlano">Nárok na jeden los <strong>má každý zákazník</strong>, který <strong>uzavře smlouvu se společností Eneka</strong> a začne odebírat zemní plyn nebo elektřinu na příslušném odběrném místě.</li>
+      </ol>
       </div>
       </Col>
     </Row>
