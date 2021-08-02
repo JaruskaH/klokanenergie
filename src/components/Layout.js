@@ -9,7 +9,8 @@ import GithubCorner from './GithubCorner'
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
 
-export default ({ children, meta, title}) => {
+
+export default ({ children, meta, title,badge}) => {
   return (
     <StaticQuery
       query={graphql`
@@ -50,7 +51,12 @@ export default ({ children, meta, title}) => {
                 })
               : false
           }
-        
+
+      
+       
+
+
+
         return (
           <Fragment>
             <Helmet
@@ -80,7 +86,7 @@ export default ({ children, meta, title}) => {
 
             <Fragment>{children}</Fragment>
 
-            <Footer/>
+            <Footer badge={badge}/>
           </Fragment>
         )
       }}

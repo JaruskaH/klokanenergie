@@ -6,3 +6,8 @@
     background-position: left bottom;
     min-height: 80vh;
 }
+@media (max-width: 600px) {
+    .HomeIm {
+        min-height: 30vh;
+    }
+}

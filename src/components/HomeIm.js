@@ -19,8 +19,8 @@ const HomeImage = ({ imageData }) => {
       </Col>
   
       <Col md={5} s={12}>
-        <div style={{ marginTop: '70px'}}>
-        <h1 style = {{fontSize: '6rem',fontWeight: '800'}}>Nizké ceny<br/>Osobní přístup</h1>
+        <div style={{ marginTop: '70px', marginLeft: '50px', marginLeft: '50px'}}>
+        <h1 style = {{fontSize: '6rem',fontWeight: '800'}}>Nízké ceny<br/>Osobní přístup</h1>
         <Link to="/plyn"><Button className="butto" variant="secondary" size="lg">
         <span style={{fontSize: '2rem'}}>Plyn</span>
     </Button></Link>

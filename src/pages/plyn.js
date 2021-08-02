@@ -43,7 +43,7 @@ function PlynPage(props) {
       <main className="DefaultPage">
 
       <Container className="fullCont">
-    <Row>
+    <Row className="whitebg">
       <Col md={7} xs={12}>
      <HalfImage imageData={imageData}/>
   

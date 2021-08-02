@@ -10,6 +10,7 @@ import { Container,Row,Col,Card,ListGroup,Figure } from 'react-bootstrap';
 import HomeImage from "../components/HomeIm"
 import ima from "../../static/images/vyhrajautouvodni.png"
 import {Link} from 'gatsby'
+
 function HomePage(props) {
   const data = useStaticQuery(
     graphql`
@@ -25,18 +26,20 @@ function HomePage(props) {
     `
   )
   // Set ImageData.
-  const imageData = data.desktop.childImageSharp.fluid
+  const imageData = data.desktop.childImageSharp.fluid;
+  const badge = <Link to="/vyhrajauto"><img className='pulkruhim' src={ima} /></Link>;
   return ( 
   <Layout
     meta={ false}
     title={ false}
+    badge={badge}
   >
   <main className="Home">
     <HomeImage
       imageData={imageData}
     />
   </main>
-  <Link to="/vyhrajauto"><img className='pulkruhim' src={ima} /></Link>
+  
   </Layout>
   
   )

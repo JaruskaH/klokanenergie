@@ -145,6 +145,7 @@ a:link {
   }
   body {
     font-family: "Montserrat", sans-serif;
+    
   }
   .pravidlasout {
       font-family: "montserrat", sans-serif;
@@ -166,12 +167,18 @@ a:link {
     padding: 1.5rem 3rem;
     margin-right: 1rem;
   }
-  
+
   .pulkruhim{
-    margin-bottom: 1px;
-    margin-left: 1px;
-    width: 469px;
-    position: fixed;
+    width: 423px;
+    position: absolute;
     bottom: 0;
     right: 8%;
+  }
+  @media (max-width: 600px) {
+    .pulkruhim {
+        width: 302px;
+    }
+  }
+  .whitebg {
+    background-color: white;
   }
