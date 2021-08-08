@@ -6,8 +6,20 @@
     background-position: left bottom;
     min-height: 80vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 835px) {
     .HomeIm {
-        min-height: 30vh;
+        min-height: 40vh;
+        position: center top;
+    }
+}
+@media (max-width: 835px) {
+    .homediv {
+        display: none;
+    }
+}
+
+@media (min-width: 835px) {
+    .homedivmob {
+        display: none;
     }
 }

@@ -145,6 +145,7 @@ a:link {
   }
   body {
     font-family: "Montserrat", sans-serif;
+    min-height: 100%;
     
   }
   .pravidlasout {
@@ -177,6 +178,7 @@ a:link {
   @media (max-width: 600px) {
     .pulkruhim {
         width: 302px;
+        right: 20%;
     }
   }
   .whitebg {
