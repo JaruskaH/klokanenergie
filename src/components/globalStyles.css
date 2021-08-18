@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: var(--font-system);
-  min-height: 100%;
+  min-height: 100vh;
   position: relative;
   background: #1c79be;
   color: var(--secondary);

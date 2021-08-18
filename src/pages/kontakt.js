@@ -27,8 +27,8 @@ function KontaktPage(props) {
   // Set ImageData.
   const imageData = data.desktop.childImageSharp.fluid
   const center={
-    lat: 49.2276528,
-    lng: 16.5799636
+    lat: 49.22779290956267, 
+    lng: 16.581916263700442
   }
   return ( 
   <Layout
@@ -52,18 +52,15 @@ function KontaktPage(props) {
                           Vše řešíme telefonicky, e-mailem, poštou.<br></br>
                           V případě osobního kontaktu nás prosím kontaktujte.</p>
       <ul className="kontaktlist">
-        <li className="eleknobullet"><strong className="strongtext">Linky pro zákazníky:</strong></li>
-        <li className="eleknobullet">Ze sítě KlokanMobil: *55</li>
-        <li className="eleknobullet"><strong className="strongtext">Pevná linka:</strong> 530 333 144</li>
-        <li className="eleknobullet"><strong className="strongtext">Mobilní linka:</strong> 778 144 144</li>
-        <li className="eleknobullet"><strong className="strongtext">e-mail:</strong> info@klokanmobil.cz</li>
-        <li className="eleknobullet">Všední dny 9:00 - 16:00 hod</li>
+        <li className="eleknobullet"><strong className="strongtext">Mobilní linka:</strong><a href="tel:+420778429702"> 778 429 702</a></li>
+        <li className="eleknobullet"><strong className="strongtext">e-mail:</strong><a href="mailto: info@klokanenergie.cz"> info@klokanenergie.cz</a></li>
         <br></br>
-        <li className="eleknobullet"><strong className="strongtext">IČ:</strong> 03118932, DIČ: CZ03118932</li>
-        <li className="eleknobullet"><strong className="strongtext">Bankovní spojení:</strong> 776626/5500</li>
+        <li className="eleknobullet"><strong className="strongtext">IČ:</strong> 09815384, DIČ: CZ09815384</li>
         <br></br>
         <li className="eleknobullet"><strong className="strongtext">Sídlo společnosti:</strong></li>
-        <li className="eleknobullet">Purkyňova 103 , 612 00 Brno</li>
+        <li className="eleknobullet">Purkyňova 2921/103</li>
+        <li className="eleknobullet">Královo Pole</li>
+        <li className="eleknobullet">612 00 Brno</li>
       </ul>
       </div>
       </Col>

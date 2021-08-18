@@ -49,6 +49,11 @@ function PravidlaPage(props) {
         <li className="pravidlano">Společnost <strong>KlokanEnergie</strong> se zavazuje uhradit částku <strong>300.000 Kč</strong> včetně DPH nejpozději do 10dnů od uzavření soutěže. Tato částka je určena výhradně na nákup automobilu v předem dohodnutém autosalonu XXX.</li>
         <li className="pravidlano">Majitel výherního losu <strong>si může vybrat jakýkoliv automobil</strong> z aktuální nabídky autosalonu. V případě nákupu automobilu s vyšší prodejní cenou, zaplatí společnost KlokanEnergie částku 300.000Kč včetně DPH a majitel výherního losu zaplatí pouze zbytek ceny. </li>
         <li className="pravidlano">Nárok na jeden los <strong>má každý zákazník</strong>, který <strong>uzavře smlouvu se společností Eneka</strong> a začne odebírat zemní plyn nebo elektřinu na příslušném odběrném místě.</li>
+        <li className="pravidlano">V případě, že lze předpokládat na jednom odběrném místě vyšší spotřebu než 10Mw za jeden rok, má zákazník, který uzavřel smlouvu, nárok na další los za toto odběrné místo.</li>
+        <li className="pravidlano">Nárok na jeden los má dále každá osoba, která doporučí jiného zákazníka s odběrným místem. V případě, doporučení zákazníka s odběrným místem, kde lze předpokládat vyšší spotřebu než 10Mw za jeden rok, má osoba, která doporučila, nárok na další los za toto doporučené odběrné místo.</li>
+        <li className="pravidlano">V případě, že má účastník soutěže nárok na jeden nebo více losů a nemá zájem využít účasti ve slosování o automobil, může přenechat tento los jiné osobě. Toto výslovné přání lze učinit nejpozději jeden den před vyhlášeným uzavřením soutěže a to pouze písemnou formou s úředně ověřeným podpisem.</li>
+        <li className="pravidlano">Počet losů, který získá jedna osoba na základě stanovených pravidel je omezen na počet 30 losů na jednu osobu.</li>
+        <li className="pravidlano">Aktuální počet přidělených losů a předpokládané datum losování a termín losování bude pravidelně zveřejňován na internetových stránkách www.klokanenergie.cz, účastníci soutěže budou také pravidelně informováni formou SMS, emailem nebo prostřednictvím sociálních sítí.</li>
       </ol>
       </div>
       </Col>

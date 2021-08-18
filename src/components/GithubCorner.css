@@ -1,14 +1,14 @@
 .GithubCorner {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 3;
+  position: absolute;
+  top: 6rem;
+  z-index: 1;
 }
-.GithubCorner svg {
+.GithubCorner_svg {
   color: #fff;
   border: 0;
   max-width: 6rem;
   max-height: 6rem;
+  
 }
 
 .GithubCorner .octo-arm {

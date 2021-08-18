@@ -81,7 +81,8 @@ export default ({ children, meta, title,badge}) => {
             />
 
           
-
+            <GithubCorner url="tel:+420778144144"/>
+                    
             <Nav subNav={subNav} />
 
             <Fragment>{children}</Fragment>
