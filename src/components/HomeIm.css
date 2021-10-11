@@ -12,9 +12,16 @@
         position: center top;
     }
 }
-@media (max-width: 835px) {
-    .homediv {
-        display: none;
+@media (max-width: 835px){
+    .hometitle {
+        text-align: center;
+    }
+    .buttodiv {
+        margin: auto;
+        width: 60%;
+    }
+    .HomeIm {
+        background-size: initial;
     }
 }
 
@@ -22,4 +29,5 @@
     .homedivmob {
         display: none;
     }
+   
 }

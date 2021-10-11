@@ -12,34 +12,48 @@ import ima from "../../static/images/vyhrajautouvodni.png"
 import {Link} from 'gatsby'
 
 function HomePage(props) {
+
+  
   const data = useStaticQuery(
     graphql`
-      query {
-        desktop: file(relativePath: { eq: "klokan_energie_eneka2.jpg" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+    query {
+      desktop: file(relativePath: { eq: "klokan_energie_eneka2.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
+      desktop2: file(relativePath: { eq: "Klokan_energie_eneka4.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+    
     `
   )
+  console.log(data)
   // Set ImageData.
   const imageData = data.desktop.childImageSharp.fluid;
+  const imageDataMob = data.desktop2.childImageSharp.fluid;
+
+
   const badge = <Link to="/vyhrajauto"><img className='pulkruhim' src={ima} /></Link>;
   return ( 
   <Layout
     meta={ false}
     title={ false}
-    badge={badge}
   >
   <main className="Home">
-    <HomeImage
+  <HomeImage
       imageData={imageData}
-    />
+      imageDataMob={imageDataMob}
+      badge={ima}
+  />
   </main>
-  
   </Layout>
   
   )

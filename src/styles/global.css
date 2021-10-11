@@ -168,6 +168,17 @@ a:link {
   .butto{
     padding: 1.5rem 3rem;
     margin-right: 1rem;
+    background-color: #022F4E;
+    border: 0px;
+  }
+  @media (max-width: 835px){
+    .butto{
+      margin-bottom: 2rem;
+      background-color: #022F4E;
+      border: 0px;
+      
+      
+    }
   }
 
   .pulkruhim{
@@ -176,12 +187,27 @@ a:link {
     bottom: 0;
     right: 8%;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 835px) {
     .pulkruhim {
-        width: 302px;
-        right: 20%;
+        display:none;
     }
   }
   .whitebg {
     background-color: white;
+  }
+  .vyhrajautomob{
+    background-color: #022F4E;
+    color: white;
+    font-size: 1rem;
+  }
+  .strongtextvawhite{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+  }
+  .vyhrajautomob{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+
   }
