@@ -6,7 +6,11 @@ import Logo from './Logo'
 
 import './Nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+
 import { faHome,faBurn,faBolt,faExclamation,faMapMarkerAlt,faListOl} from '@fortawesome/free-solid-svg-icons'
+config.autoAddCss = false
 export class Navigation extends Component {
   state = {
     active: false,
