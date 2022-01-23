@@ -25,7 +25,7 @@ const HomeImage = ({ imageData,imageDataMob,badge }) => {
   
       <Col xl={5} lg={6} md={7} sm={8} xs={12}>
         <div className="homediv" style={{ marginTop: '70px', marginLeft: '50px',}}>
-        <h1 className="hometitle" style = {{fontSize: '5.8rem',fontWeight: '800',}}>Nízké ceny<br/>Osobní přístup</h1>
+        <h1 className="hometitle" style={{ marginRight: '30px',}}>Nízké ceny<br/>Osobní přístup</h1>
         <div className="buttodiv">
         <Link to="/plyn"><Button className="butto" variant="secondary" size="lg">
         <span style={{fontSize: '2rem'}}>Plyn</span>

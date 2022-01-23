@@ -8,17 +8,22 @@
 }
 @media (max-width: 835px) {
     .HomeIm {
-        min-height: 40vh;
-        position: center top;
+        min-height: 20vh;
+        max-height: 35vh;
+        background-position: left bottom;
     }
 }
 @media (max-width: 835px){
     .hometitle {
-        text-align: center;
+        text-align: right;
+        font-size: 3rem;
+        font-weight: 800;
     }
     .buttodiv {
-        margin: auto;
-        width: 60%;
+        margin-right: 20px;
+        float: right;
+        
+    
     }
     .HomeIm {
         background-size: initial;
@@ -26,8 +31,15 @@
 }
 
 @media (min-width: 835px) {
+    .hometitle {
+        font-size: 5.8rem;
+        font-weight: 800;
+    }
     .homedivmob {
         display: none;
     }
    
+}
+.ImageDataMobVyhrajAuto{
+    
 }

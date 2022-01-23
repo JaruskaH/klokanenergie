@@ -22,7 +22,7 @@ function ElektrinaPage(props) {
             }
           }
         }
-        graf: file(relativePath: { eq: "graf_eneka.png" }) {
+        graf: file(relativePath: { eq: "graf_eneka_elektrina.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 400) {
               ...GatsbyImageSharpFluid

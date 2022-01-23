@@ -22,7 +22,7 @@ function PlynPage(props) {
             }
           }
         }
-        graf: file(relativePath: { eq: "graf_eneka.png" }) {
+        graf: file(relativePath: { eq: "graf_eneka_plyn.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 400) {
               ...GatsbyImageSharpFluid
